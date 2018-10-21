@@ -102,6 +102,7 @@
             <appender-ref ref="asyncInfo"/>
             <appender-ref ref="asyncWarn"/>
             <appender-ref ref="asyncError"/>
+            <appender-ref ref="consoleLog"/>
         </root>
     </springProfile>
 
