@@ -1,5 +1,6 @@
 package com.ypika.mp.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.ypika.mp.enumer.FoodType;
 import com.ypika.mp.enumer.NoteType;
 import lombok.Data;
@@ -40,7 +41,7 @@ public class Record {
     /**
      * 饮食时间
      */
-    //@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
     private Date eatDate;
     //@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")

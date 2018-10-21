@@ -3,6 +3,9 @@ package com.ypika.mp.dao;
 import com.ypika.mp.domain.Record;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface RecordRepository extends JpaRepository<Record,Long> {
 
+    List<Record> findByOrderByIdDesc();
 }

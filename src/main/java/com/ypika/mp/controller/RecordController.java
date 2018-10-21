@@ -1,7 +1,7 @@
 package com.ypika.mp.controller;
 
-import com.ypika.mp.dao.RecordRepository;
 import com.ypika.mp.domain.Record;
+import com.ypika.mp.service.RecordService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,22 +14,22 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration
 public class RecordController {
     @Autowired
-    private RecordRepository recordRepository;
+    private RecordService recordService;
 
     @ApiOperation(value = "保存记录",notes = "notes保存记录")
     @PostMapping
     public Object saveRecord(@RequestBody Record record){
-        return recordRepository.saveAndFlush(record);
+        return recordService.saveRecord(record);
     }
 
     @GetMapping
     public Object findAllRecord(){
-        return recordRepository.findAll();
+        return recordService.findAllRecord();
     }
 
     @GetMapping("/{id}")
-    public Object findRecord(@PathVariable Long id){
-        return recordRepository.findById(id);
+    public Object findRecordById(@PathVariable Long id){
+        return recordService.findRecordById(id);
     }
 
 }
