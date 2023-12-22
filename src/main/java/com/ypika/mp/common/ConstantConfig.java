@@ -24,17 +24,17 @@ public class ConstantConfig {
     public static final String HULUO_PUBLIC_USERINFO_URL = "https://api.weixin.qq.com/sns/userinfo";
 
     /*轻题库*/
-    private final static String MASTER_APP_ID = "wxbc7a043b05e0bbe5";//轻题库微信小程序app_id
-    private final static String MASTER_APP_SECRET = "2233ff9db4afe8fd6779efa365bf8b37";//轻题库微信小程序密钥
-    /*会计轻题库*/
-    private final static String ACCOUNTING_APP_ID = "wx55462a1a7fdddd74";//会计轻题库微信小程序app_id
-    private final static String ACCOUNTING_APP_SECRET = "0ef964dd00dd2d9c30674c0778f917b6";//会计轻题库微信小程序密钥
-    /*芒果会计*/
-    private final static String MANGO_APP_ID = "wxa5082df4ad27a6f3";//芒果会计微信小程序app_id
-    private final static String MANGO_APP_SECRET = "4b7317b6e569e2ff209abf4acec614bc";//芒果会计微信小程序密钥
+    private final static String MASTER_APP_ID = "xxxx";//轻题库微信小程序app_id
+    private final static String MASTER_APP_SECRET = "xxx";//轻题库微信小程序密钥
+    /*轻题库*/
+    private final static String ACCOUNTING_APP_ID = "xxxx";//轻题库微信小程序app_id
+    private final static String ACCOUNTING_APP_SECRET = "xxxx";//题库微信小程序密钥
+    /*会计*/
+    private final static String MANGO_APP_ID = "xxxx";//会计微信小程序app_id
+    private final static String MANGO_APP_SECRET = "xxxx";//会计微信小程序密钥
     /*移动客户端*/
-    private final static String IOS_ANDROID_APP_ID = "wx19116f0310d09fe5";//app客户端app_id
-    private final static String IOS_ANDROID_APP_SECRET = "f6715cdf9aeb7abee8a209e9e35926b1";//app客户端密钥
+    private final static String IOS_ANDROID_APP_ID = "xxxx";//app客户端app_id
+    private final static String IOS_ANDROID_APP_SECRET = "xxxx";//app客户端密钥
 
     //随机生成题目数量
     public static final int RANDOM_QUESTION_SUM = 50;
@@ -88,11 +88,11 @@ public class ConstantConfig {
     private static final String MANGO_REDIS_WX_ACCESS_TOKEN = "MANGO:WX:ACCESS_TOKEN:";
 
     //用户没有头像情况下默认头像
-    private static final String DEFAULT_MASTER_AVATARURL = "https://r.exam.sunlands.site/s2/image/we_head.png";
+    private static final String DEFAULT_MASTER_AVATARURL = "https://r.exam.xxxx.site/s2/image/we_head.png";
     //用户没有头像情况下默认头像
-    private static final String DEFAULT_ACCOUNTING_AVATARURL = "https://r.exam.sunlands.site/s2/image/accontant/mongo.jpg";
+    private static final String DEFAULT_ACCOUNTING_AVATARURL = "https://r.exam.xxxx.site/s2/image/accontant/mongo.jpg";
     /*首页520 活动icon*/
-    public static final String HOME_ACTIVITY_ICON = "https://r.exam.sunlands.site/s3/image/icon.gif";
+    public static final String HOME_ACTIVITY_ICON = "https://r.exam.xxxx.site/s3/image/icon.gif";
     //世界杯活动icon
     public static final String HOME_WORLD_CUP_ICON = "/image/world_center.gif";
 
